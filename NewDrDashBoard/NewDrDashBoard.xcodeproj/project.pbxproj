@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D6AC828D534FF3B5A29CBFB /* Pods_NewDrDashBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3246E132E052588A41EE9A /* Pods_NewDrDashBoard.framework */; };
+		525E90341D642644009C8BF6 /* DrDB_PatientInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E90331D642644009C8BF6 /* DrDB_PatientInfoModel.swift */; };
+		525E90361D643A7F009C8BF6 /* DrDB_ElementsGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E90351D643A7F009C8BF6 /* DrDB_ElementsGroupModel.swift */; };
+		525E90381D643AB0009C8BF6 /* DrDB_ElementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E90371D643AB0009C8BF6 /* DrDB_ElementsModel.swift */; };
+		52A054E41D6313C500326A24 /* DrDB_WarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A054E31D6313C500326A24 /* DrDB_WarningsViewController.swift */; };
+		52A054E61D631BCF00326A24 /* DrDB_WarningsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A054E51D631BCF00326A24 /* DrDB_WarningsTableViewCell.swift */; };
+		52DA877D1D65C5E000430235 /* DrDB_ParameterValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA877C1D65C5E000430235 /* DrDB_ParameterValueModel.swift */; };
+		52F1974F1D5DA99B009BCE03 /* PassCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1974E1D5DA99B009BCE03 /* PassCodeInputView.swift */; };
+		52F197521D5DD2DD009BCE03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F197501D5DD2DD009BCE03 /* Main.storyboard */; };
+		52F197541D5DE519009BCE03 /* DrDB_PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F197531D5DE519009BCE03 /* DrDB_PatientListViewController.swift */; };
+		52F197561D5DE79D009BCE03 /* DrDB_PatientInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F197551D5DE79D009BCE03 /* DrDB_PatientInfoCell.swift */; };
+		B35D93141D534C4300EF99DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D93131D534C4300EF99DF /* AppDelegate.swift */; };
+		B35D931C1D534C4400EF99DF /* NewDrDashBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B35D931A1D534C4400EF99DF /* NewDrDashBoard.xcdatamodeld */; };
+		B35D931E1D534C4400EF99DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35D931D1D534C4400EF99DF /* Assets.xcassets */; };
+		B35D93211D534C4400EF99DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35D931F1D534C4400EF99DF /* LaunchScreen.storyboard */; };
+		B35D932C1D534C4400EF99DF /* NewDrDashBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D932B1D534C4400EF99DF /* NewDrDashBoardTests.swift */; };
+		B35D93371D534C4400EF99DF /* NewDrDashBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D93361D534C4400EF99DF /* NewDrDashBoardUITests.swift */; };
+		B3D291251D5C5EB700C8DE20 /* DrDB_DoctorsInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D291241D5C5EB700C8DE20 /* DrDB_DoctorsInfoModel.swift */; };
+		B3DB10A31D586A8E00C2DA31 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B3DB10A21D586A8E00C2DA31 /* Podfile */; };
+		B3DB10AC1D586CAC00C2DA31 /* DrDB_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10AB1D586CAC00C2DA31 /* DrDB_LoginViewController.swift */; };
+		B3DB10AE1D586E8400C2DA31 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10AD1D586E8400C2DA31 /* DataManager.swift */; };
+		B3DB10B01D586EC000C2DA31 /* WebAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10AF1D586EC000C2DA31 /* WebAPIManager.swift */; };
+		B3DB10B21D586EEE00C2DA31 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10B11D586EEE00C2DA31 /* GlobalConstants.swift */; };
+		B3DB10B61D58887E00C2DA31 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10B51D58887E00C2DA31 /* ActivityIndicator.swift */; };
+		B3DB10B81D5888B100C2DA31 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10B71D5888B100C2DA31 /* Utility.swift */; };
+		B3DB10BA1D58890500C2DA31 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10B91D58890500C2DA31 /* UIView-Extension.swift */; };
+		B3DB10BC1D589EB600C2DA31 /* DrDB_PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB10BB1D589EB600C2DA31 /* DrDB_PasscodeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B35D93281D534C4400EF99DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B35D93081D534C4300EF99DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35D930F1D534C4300EF99DF;
+			remoteInfo = NewDrDashBoard;
+		};
+		B35D93331D534C4400EF99DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B35D93081D534C4300EF99DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35D930F1D534C4300EF99DF;
+			remoteInfo = NewDrDashBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F3246E132E052588A41EE9A /* Pods_NewDrDashBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewDrDashBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		417110F63FA3DA8CDC059CDE /* Pods-NewDrDashBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewDrDashBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewDrDashBoard/Pods-NewDrDashBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		525E90331D642644009C8BF6 /* DrDB_PatientInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_PatientInfoModel.swift; sourceTree = "<group>"; };
+		525E90351D643A7F009C8BF6 /* DrDB_ElementsGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_ElementsGroupModel.swift; sourceTree = "<group>"; };
+		525E90371D643AB0009C8BF6 /* DrDB_ElementsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_ElementsModel.swift; sourceTree = "<group>"; };
+		52A054E31D6313C500326A24 /* DrDB_WarningsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_WarningsViewController.swift; sourceTree = "<group>"; };
+		52A054E51D631BCF00326A24 /* DrDB_WarningsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_WarningsTableViewCell.swift; sourceTree = "<group>"; };
+		52DA877C1D65C5E000430235 /* DrDB_ParameterValueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_ParameterValueModel.swift; sourceTree = "<group>"; };
+		52F1974E1D5DA99B009BCE03 /* PassCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassCodeInputView.swift; sourceTree = "<group>"; };
+		52F197511D5DD2DD009BCE03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52F197531D5DE519009BCE03 /* DrDB_PatientListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_PatientListViewController.swift; sourceTree = "<group>"; };
+		52F197551D5DE79D009BCE03 /* DrDB_PatientInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_PatientInfoCell.swift; sourceTree = "<group>"; };
+		7A8A8FCB8149DDE4BF6C4DFE /* Pods-NewDrDashBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewDrDashBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewDrDashBoard/Pods-NewDrDashBoard.release.xcconfig"; sourceTree = "<group>"; };
+		B35D93101D534C4300EF99DF /* NewDrDashBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDrDashBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35D93131D534C4300EF99DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B35D931B1D534C4400EF99DF /* NewDrDashBoard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewDrDashBoard.xcdatamodel; sourceTree = "<group>"; };
+		B35D931D1D534C4400EF99DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B35D93201D534C4400EF99DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B35D93221D534C4400EF99DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35D93271D534C4400EF99DF /* NewDrDashBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewDrDashBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35D932B1D534C4400EF99DF /* NewDrDashBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrDashBoardTests.swift; sourceTree = "<group>"; };
+		B35D932D1D534C4400EF99DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35D93321D534C4400EF99DF /* NewDrDashBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewDrDashBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35D93361D534C4400EF99DF /* NewDrDashBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrDashBoardUITests.swift; sourceTree = "<group>"; };
+		B35D93381D534C4400EF99DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D291241D5C5EB700C8DE20 /* DrDB_DoctorsInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_DoctorsInfoModel.swift; sourceTree = "<group>"; };
+		B3DB10A21D586A8E00C2DA31 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		B3DB10AB1D586CAC00C2DA31 /* DrDB_LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_LoginViewController.swift; sourceTree = "<group>"; };
+		B3DB10AD1D586E8400C2DA31 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B3DB10AF1D586EC000C2DA31 /* WebAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIManager.swift; sourceTree = "<group>"; };
+		B3DB10B11D586EEE00C2DA31 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		B3DB10B51D58887E00C2DA31 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		B3DB10B71D5888B100C2DA31 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B3DB10B91D58890500C2DA31 /* UIView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		B3DB10BB1D589EB600C2DA31 /* DrDB_PasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrDB_PasscodeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B35D930D1D534C4300EF99DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6AC828D534FF3B5A29CBFB /* Pods_NewDrDashBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D93241D534C4400EF99DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D932F1D534C4400EF99DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A22417EEA9948DB67B232A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F3246E132E052588A41EE9A /* Pods_NewDrDashBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B031C263F1FAF99EEBC7B683 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				417110F63FA3DA8CDC059CDE /* Pods-NewDrDashBoard.debug.xcconfig */,
+				7A8A8FCB8149DDE4BF6C4DFE /* Pods-NewDrDashBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B35D93071D534C4300EF99DF = {
+			isa = PBXGroup;
+			children = (
+				B3DB10A21D586A8E00C2DA31 /* Podfile */,
+				B35D93121D534C4300EF99DF /* NewDrDashBoard */,
+				B35D932A1D534C4400EF99DF /* NewDrDashBoardTests */,
+				B35D93351D534C4400EF99DF /* NewDrDashBoardUITests */,
+				B35D93111D534C4300EF99DF /* Products */,
+				B031C263F1FAF99EEBC7B683 /* Pods */,
+				A22417EEA9948DB67B232A8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B35D93111D534C4300EF99DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B35D93101D534C4300EF99DF /* NewDrDashBoard.app */,
+				B35D93271D534C4400EF99DF /* NewDrDashBoardTests.xctest */,
+				B35D93321D534C4400EF99DF /* NewDrDashBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B35D93121D534C4300EF99DF /* NewDrDashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB10A41D586C5D00C2DA31 /* Constants */,
+				B3DB10A51D586C5D00C2DA31 /* Controllers */,
+				B3DB10A61D586C5D00C2DA31 /* CustomCells */,
+				B3DB10A71D586C5D00C2DA31 /* DataManager */,
+				B3DB10A81D586C5D00C2DA31 /* Models */,
+				B3DB10A91D586C5D00C2DA31 /* Utilities */,
+				B3DB10AA1D586C5D00C2DA31 /* WebAPIManager */,
+				B35D93131D534C4300EF99DF /* AppDelegate.swift */,
+				B35D931D1D534C4400EF99DF /* Assets.xcassets */,
+				52F197501D5DD2DD009BCE03 /* Main.storyboard */,
+				B35D931F1D534C4400EF99DF /* LaunchScreen.storyboard */,
+				B35D93221D534C4400EF99DF /* Info.plist */,
+				B35D931A1D534C4400EF99DF /* NewDrDashBoard.xcdatamodeld */,
+			);
+			path = NewDrDashBoard;
+			sourceTree = "<group>";
+		};
+		B35D932A1D534C4400EF99DF /* NewDrDashBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				B35D932B1D534C4400EF99DF /* NewDrDashBoardTests.swift */,
+				B35D932D1D534C4400EF99DF /* Info.plist */,
+			);
+			path = NewDrDashBoardTests;
+			sourceTree = "<group>";
+		};
+		B35D93351D534C4400EF99DF /* NewDrDashBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B35D93361D534C4400EF99DF /* NewDrDashBoardUITests.swift */,
+				B35D93381D534C4400EF99DF /* Info.plist */,
+			);
+			path = NewDrDashBoardUITests;
+			sourceTree = "<group>";
+		};
+		B3DB10A41D586C5D00C2DA31 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB10B11D586EEE00C2DA31 /* GlobalConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B3DB10A51D586C5D00C2DA31 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB10AB1D586CAC00C2DA31 /* DrDB_LoginViewController.swift */,
+				B3DB10BB1D589EB600C2DA31 /* DrDB_PasscodeViewController.swift */,
+				52F197531D5DE519009BCE03 /* DrDB_PatientListViewController.swift */,
+				52A054E31D6313C500326A24 /* DrDB_WarningsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3DB10A61D586C5D00C2DA31 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				52F197551D5DE79D009BCE03 /* DrDB_PatientInfoCell.swift */,
+				52A054E51D631BCF00326A24 /* DrDB_WarningsTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		B3DB10A71D586C5D00C2DA31 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB10AD1D586E8400C2DA31 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B3DB10A81D586C5D00C2DA31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3D291241D5C5EB700C8DE20 /* DrDB_DoctorsInfoModel.swift */,
+				525E90331D642644009C8BF6 /* DrDB_PatientInfoModel.swift */,
+				525E90351D643A7F009C8BF6 /* DrDB_ElementsGroupModel.swift */,
+				525E90371D643AB0009C8BF6 /* DrDB_ElementsModel.swift */,
+				52DA877C1D65C5E000430235 /* DrDB_ParameterValueModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3DB10A91D586C5D00C2DA31 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				52F1974E1D5DA99B009BCE03 /* PassCodeInputView.swift */,
+				B3DB10B91D58890500C2DA31 /* UIView-Extension.swift */,
+				B3DB10B71D5888B100C2DA31 /* Utility.swift */,
+				B3DB10B51D58887E00C2DA31 /* ActivityIndicator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B3DB10AA1D586C5D00C2DA31 /* WebAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB10AF1D586EC000C2DA31 /* WebAPIManager.swift */,
+			);
+			path = WebAPIManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B35D930F1D534C4300EF99DF /* NewDrDashBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35D933B1D534C4400EF99DF /* Build configuration list for PBXNativeTarget "NewDrDashBoard" */;
+			buildPhases = (
+				882D0E207B52C34B89068585 /* 📦 Check Pods Manifest.lock */,
+				B35D930C1D534C4300EF99DF /* Sources */,
+				B35D930D1D534C4300EF99DF /* Frameworks */,
+				B35D930E1D534C4300EF99DF /* Resources */,
+				29B16C67C8D6DCBE9D78929B /* 📦 Embed Pods Frameworks */,
+				C99F833BFAD088C3B8E3C0BF /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewDrDashBoard;
+			productName = NewDrDashBoard;
+			productReference = B35D93101D534C4300EF99DF /* NewDrDashBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B35D93261D534C4400EF99DF /* NewDrDashBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35D933E1D534C4400EF99DF /* Build configuration list for PBXNativeTarget "NewDrDashBoardTests" */;
+			buildPhases = (
+				B35D93231D534C4400EF99DF /* Sources */,
+				B35D93241D534C4400EF99DF /* Frameworks */,
+				B35D93251D534C4400EF99DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B35D93291D534C4400EF99DF /* PBXTargetDependency */,
+			);
+			name = NewDrDashBoardTests;
+			productName = NewDrDashBoardTests;
+			productReference = B35D93271D534C4400EF99DF /* NewDrDashBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B35D93311D534C4400EF99DF /* NewDrDashBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35D93411D534C4400EF99DF /* Build configuration list for PBXNativeTarget "NewDrDashBoardUITests" */;
+			buildPhases = (
+				B35D932E1D534C4400EF99DF /* Sources */,
+				B35D932F1D534C4400EF99DF /* Frameworks */,
+				B35D93301D534C4400EF99DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B35D93341D534C4400EF99DF /* PBXTargetDependency */,
+			);
+			name = NewDrDashBoardUITests;
+			productName = NewDrDashBoardUITests;
+			productReference = B35D93321D534C4400EF99DF /* NewDrDashBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B35D93081D534C4300EF99DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = cognizant;
+				TargetAttributes = {
+					B35D930F1D534C4300EF99DF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B35D93261D534C4400EF99DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B35D930F1D534C4300EF99DF;
+					};
+					B35D93311D534C4400EF99DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B35D930F1D534C4300EF99DF;
+					};
+				};
+			};
+			buildConfigurationList = B35D930B1D534C4300EF99DF /* Build configuration list for PBXProject "NewDrDashBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B35D93071D534C4300EF99DF;
+			productRefGroup = B35D93111D534C4300EF99DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B35D930F1D534C4300EF99DF /* NewDrDashBoard */,
+				B35D93261D534C4400EF99DF /* NewDrDashBoardTests */,
+				B35D93311D534C4400EF99DF /* NewDrDashBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B35D930E1D534C4300EF99DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35D93211D534C4400EF99DF /* LaunchScreen.storyboard in Resources */,
+				B35D931E1D534C4400EF99DF /* Assets.xcassets in Resources */,
+				B3DB10A31D586A8E00C2DA31 /* Podfile in Resources */,
+				52F197521D5DD2DD009BCE03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D93251D534C4400EF99DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D93301D534C4400EF99DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29B16C67C8D6DCBE9D78929B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewDrDashBoard/Pods-NewDrDashBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		882D0E207B52C34B89068585 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C99F833BFAD088C3B8E3C0BF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewDrDashBoard/Pods-NewDrDashBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B35D930C1D534C4300EF99DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DB10B01D586EC000C2DA31 /* WebAPIManager.swift in Sources */,
+				52F197541D5DE519009BCE03 /* DrDB_PatientListViewController.swift in Sources */,
+				B3D291251D5C5EB700C8DE20 /* DrDB_DoctorsInfoModel.swift in Sources */,
+				52DA877D1D65C5E000430235 /* DrDB_ParameterValueModel.swift in Sources */,
+				B3DB10AC1D586CAC00C2DA31 /* DrDB_LoginViewController.swift in Sources */,
+				525E90361D643A7F009C8BF6 /* DrDB_ElementsGroupModel.swift in Sources */,
+				B3DB10AE1D586E8400C2DA31 /* DataManager.swift in Sources */,
+				B3DB10BA1D58890500C2DA31 /* UIView-Extension.swift in Sources */,
+				B35D931C1D534C4400EF99DF /* NewDrDashBoard.xcdatamodeld in Sources */,
+				B3DB10B81D5888B100C2DA31 /* Utility.swift in Sources */,
+				52A054E61D631BCF00326A24 /* DrDB_WarningsTableViewCell.swift in Sources */,
+				52F1974F1D5DA99B009BCE03 /* PassCodeInputView.swift in Sources */,
+				525E90381D643AB0009C8BF6 /* DrDB_ElementsModel.swift in Sources */,
+				B3DB10B61D58887E00C2DA31 /* ActivityIndicator.swift in Sources */,
+				B3DB10B21D586EEE00C2DA31 /* GlobalConstants.swift in Sources */,
+				525E90341D642644009C8BF6 /* DrDB_PatientInfoModel.swift in Sources */,
+				52F197561D5DE79D009BCE03 /* DrDB_PatientInfoCell.swift in Sources */,
+				52A054E41D6313C500326A24 /* DrDB_WarningsViewController.swift in Sources */,
+				B3DB10BC1D589EB600C2DA31 /* DrDB_PasscodeViewController.swift in Sources */,
+				B35D93141D534C4300EF99DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D93231D534C4400EF99DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35D932C1D534C4400EF99DF /* NewDrDashBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D932E1D534C4400EF99DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35D93371D534C4400EF99DF /* NewDrDashBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B35D93291D534C4400EF99DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B35D930F1D534C4300EF99DF /* NewDrDashBoard */;
+			targetProxy = B35D93281D534C4400EF99DF /* PBXContainerItemProxy */;
+		};
+		B35D93341D534C4400EF99DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B35D930F1D534C4300EF99DF /* NewDrDashBoard */;
+			targetProxy = B35D93331D534C4400EF99DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52F197501D5DD2DD009BCE03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F197511D5DD2DD009BCE03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B35D931F1D534C4400EF99DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B35D93201D534C4400EF99DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B35D93391D534C4400EF99DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kumar Krishnamurthy Venkateswaran (TUM85LHY2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kumar Krishnamurthy Venkateswaran (TUM85LHY2Q)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "0e28dc74-b950-47f6-8199-faf33ab4eb5f";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B35D933A1D534C4400EF99DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kumar Krishnamurthy Venkateswaran (TUM85LHY2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kumar Krishnamurthy Venkateswaran (TUM85LHY2Q)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "0e28dc74-b950-47f6-8199-faf33ab4eb5f";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B35D933C1D534C4400EF99DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417110F63FA3DA8CDC059CDE /* Pods-NewDrDashBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kumar Krishnamurthy Venkateswaran (TUM85LHY2Q)";
+				INFOPLIST_FILE = NewDrDashBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhenterprisedev.NewDrDashBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0e28dc74-b950-47f6-8199-faf33ab4eb5f";
+			};
+			name = Debug;
+		};
+		B35D933D1D534C4400EF99DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8A8FCB8149DDE4BF6C4DFE /* Pods-NewDrDashBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kumar Krishnamurthy Venkateswaran (TUM85LHY2Q)";
+				INFOPLIST_FILE = NewDrDashBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhenterprisedev.NewDrDashBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0e28dc74-b950-47f6-8199-faf33ab4eb5f";
+			};
+			name = Release;
+		};
+		B35D933F1D534C4400EF99DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewDrDashBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizant.com.NewDrDashBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewDrDashBoard.app/NewDrDashBoard";
+			};
+			name = Debug;
+		};
+		B35D93401D534C4400EF99DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewDrDashBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizant.com.NewDrDashBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewDrDashBoard.app/NewDrDashBoard";
+			};
+			name = Release;
+		};
+		B35D93421D534C4400EF99DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewDrDashBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizant.com.NewDrDashBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NewDrDashBoard;
+			};
+			name = Debug;
+		};
+		B35D93431D534C4400EF99DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewDrDashBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizant.com.NewDrDashBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NewDrDashBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B35D930B1D534C4300EF99DF /* Build configuration list for PBXProject "NewDrDashBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35D93391D534C4400EF99DF /* Debug */,
+				B35D933A1D534C4400EF99DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35D933B1D534C4400EF99DF /* Build configuration list for PBXNativeTarget "NewDrDashBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35D933C1D534C4400EF99DF /* Debug */,
+				B35D933D1D534C4400EF99DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35D933E1D534C4400EF99DF /* Build configuration list for PBXNativeTarget "NewDrDashBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35D933F1D534C4400EF99DF /* Debug */,
+				B35D93401D534C4400EF99DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35D93411D534C4400EF99DF /* Build configuration list for PBXNativeTarget "NewDrDashBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35D93421D534C4400EF99DF /* Debug */,
+				B35D93431D534C4400EF99DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B35D931A1D534C4400EF99DF /* NewDrDashBoard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B35D931B1D534C4400EF99DF /* NewDrDashBoard.xcdatamodel */,
+			);
+			currentVersion = B35D931B1D534C4400EF99DF /* NewDrDashBoard.xcdatamodel */;
+			path = NewDrDashBoard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B35D93081D534C4300EF99DF /* Project object */;
+}

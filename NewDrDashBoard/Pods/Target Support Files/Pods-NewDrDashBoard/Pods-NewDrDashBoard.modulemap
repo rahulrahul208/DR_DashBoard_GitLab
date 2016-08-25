@@ -1,0 +1,6 @@
+framework module Pods_NewDrDashBoard {
+  umbrella header "Pods-NewDrDashBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}
